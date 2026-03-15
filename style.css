@@ -27,15 +27,4 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
 }
- {
-    color: var(--text-clr);
-}
 
-main {
-    padding: min(30px, 7%);
-}
-
-main p {
-    color: var(--secondary-txt-clr);
-
-}

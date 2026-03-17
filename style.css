@@ -33,7 +33,7 @@ body {
     margin-inline: 20px;
 }
 
-/* Navigation */
+/* === Navigation === */
 
 
 #sidebar ul li {
@@ -46,6 +46,18 @@ body {
 ul li a {
     color: var(--text-clr);
     text-decoration: none;
-    padding: 15px;
+    padding: 3px;
+    border-radius: 5px;
 }
 
+/* --- Hover and Active Nav Links--- */
+ul li a:hover {
+    background-color: var(--secondary-txt-clr);
+    color: var(--hover-clr);
+}
+
+ul li a:active {
+    background-color: var(--accent-clr);
+    color: var(--text-clr);
+}
+/* ----------------------------------------------- */

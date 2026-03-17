@@ -1,3 +1,5 @@
+@import '/styles/dashboard.css';
+
 :root {
     --base-clr: #11121a;
     --line-clr: #42434a;

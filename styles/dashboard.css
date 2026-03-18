@@ -1,0 +1,15 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.data-block {
+    border: 1px solid var(--text-clr);
+    padding: 9px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

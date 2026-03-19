@@ -3,6 +3,8 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 12px;
+
+    grid-auto-flow: dense;
 }
 
 .data-block {
@@ -10,7 +12,16 @@ main {
     padding: 9px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.data-block-large {
+    grid-column: 3 / span 3;
+}
+
+.data-block-large-yellow {
+    grid-column: 2 / span 3;
 }

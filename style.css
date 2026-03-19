@@ -1,3 +1,5 @@
+@import '/styles/dashboard.css';
+
 :root {
     --base-clr: #11121a;
     --line-clr: #42434a;
@@ -27,15 +29,37 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
 }
- {
+
+.container {
+    padding-inline: 20px;
+    margin-inline: 20px;
+}
+
+/* === Navigation === */
+
+
+#sidebar ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a {
+    color: var(--text-clr);
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* --- Hover and Active Nav Links--- */
+ul li a:hover {
+    background-color: var(--secondary-txt-clr);
+    color: var(--hover-clr);
+}
+
+ul li a:active {
+    background-color: var(--accent-clr);
     color: var(--text-clr);
 }
-
-main {
-    padding: min(30px, 7%);
-}
-
-main p {
-    color: var(--secondary-txt-clr);
-
-}
+/* ----------------------------------------------- */
